@@ -25,7 +25,7 @@ getQuote.onclick = () => {
 };
 
 copyQuote.onclick = () => {
-	let text = `${document.querySelector(".quote__text").textContent}\n ${document.querySelector(".quote__author").textContent}\n\nQuote-Inator - ${
+	let text = `${document.querySelector(".quote__text").textContent}\nby ${document.querySelector(".quote__author").textContent}\n\nQuote-Inator - ${
 		location.href
 	}`;
 
