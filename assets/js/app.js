@@ -1,4 +1,5 @@
 let getQuote = document.querySelector(".get-quote");
+let copyQuote = document.querySelector(".copy-quote");
 let quoteAuthor = document.querySelector(".quote__author");
 let quoteText = document.querySelector(".quote__text");
 
@@ -22,3 +23,24 @@ getQuote.onclick = () => {
 			quoteText.textContent = data.content;
 		});
 };
+
+copyQuote.onclick = () => {
+	let text = `${document.querySelector(".quote__text").textContent}\n - ${document.querySelector(".quote__author").textContent}\nQuote-Inator - ${
+		location.host
+	}`;
+
+	copyToClipboard(text);
+};
+
+function copyToClipboard(text) {
+	navigator.clipboard.writeText(text);
+
+	Swal.fire({
+		position: "bottom-end",
+		icon: "success",
+		title: "Quote copied to clipboard",
+		showConfirmButton: false,
+		toast: true,
+		timer: 2500,
+	});
+}
