@@ -25,8 +25,8 @@ getQuote.onclick = () => {
 };
 
 copyQuote.onclick = () => {
-	let text = `${document.querySelector(".quote__text").textContent}\n - ${document.querySelector(".quote__author").textContent}\nQuote-Inator - ${
-		location.host
+	let text = `${document.querySelector(".quote__text").textContent}\n ${document.querySelector(".quote__author").textContent}\n\nQuote-Inator - ${
+		location.href
 	}`;
 
 	copyToClipboard(text);
