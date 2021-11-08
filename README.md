@@ -1,5 +1,5 @@
 # Quote-Inator
-A api powered random quote generator. Designed to generate quotes nothing more. Nothing less.
+An API-powered random quote generator. Designed to generate quotes nothing more. Nothing less.
 
 # Live Version
 Quote-Inator can be found at [roshane-johnson.github.io/quote-inator](https://roshane-johnson.github.io/quote-inator/)
